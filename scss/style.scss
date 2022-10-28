@@ -1,0 +1,35 @@
+// Reference #1: https://getbootstrap.com/docs/5.0/customize/sass/
+// Required by Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #242526;
+$body-color: #B0B3B8;
+
+$purple: #6f42c1;
+$teal: #20c997;
+
+$primary: $purple;
+$secondary: $teal;
+
+$link-color: $primary;
+$link-hover-color: $secondary;
+
+// Import default variables
+@import "../node_modules/bootstrap/scss/variables";
+
+// Default variable overrides using imports
+$headings-font-family: $font-family-monospace;
+
+// Required by Bootstrap
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components
+@import "../node_modules/bootstrap/scss/reboot";  // Navbar
+// End Reference #1
+
+.content {
+  max-width: 55rem;
+}
