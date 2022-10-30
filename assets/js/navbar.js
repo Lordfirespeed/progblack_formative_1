@@ -1,5 +1,5 @@
 
-fetch("/assets/html/navbar.html")
+fetch("/progblack_formative_1/assets/html/navbar.html")
     .then(stream => stream.text())
     .then(text => define(text))
 
