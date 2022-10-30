@@ -30,6 +30,10 @@ $headings-font-family: $font-family-monospace;
 @import "../node_modules/bootstrap/scss/reboot";  // Navbar
 // End Reference #1
 
+.mw-50 {
+  max-width: 50%;
+}
+
 .content {
   max-width: 55rem;
 }
