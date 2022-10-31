@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vessel not under command</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <script src="../assets/js/navbar.js"></script>
+</head>
+
+<body>
+    <nav-bar></nav-bar>
+
+    <div id="main-content" class="container-fluid d-flex flex-row justify-content-center">
+        <section id="text-content" class="content">
+            <header>
+                <h1>Vessel not under command</h1>
+                <!--possibly bio information-->
+                <p>
+                    While autonomous vehicles have been (for better or worse) in the media spotlight over the last few years, the vehicles in question have almost exclusively been cars, trucks and trains. One hugely underappreciated field of AI in transportation is the design of autonomous sailing vessels: 90% of the worlds goods are transported by sea on cargo ships (1)- from grains and fruit to electronics and machinery, the global supply chain is crucially supported by seafaring trade.
+                </p>
+            </header>
+            <section>
+                <h2>Challenges</h2>
+                <p>
+                    The question of autonomous voyages at sea poses a challenge to even AI titans such as ABM and Rolls Royce. There are many complicating factors at sea that are not experienced by autonomous land-based vehicles:
+                </p>
+                <ul>
+                    <li>The extreme remoteness of nautical travel means that repairs or aid to damaged vessels would be unlikely and slow to arrive.</li>
+                    <li>Extreme weather events are much more common, with wind speeds easily approaching or exceeding 100km/h.</li>
+                    <li>Navigating in close quarters is much more challenging on the water, due to the unpredictable wind and tides that make controlled, slow motions especially difficult.</li>
+                    <li>The lack of roadsigns and lanes makes autonomous vessels much more reliant on GPS navigation, which can be unreliable in certain conditions.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Famous attempts so far</h2>
+                <div class="d-inline-flex justify-content-center w-100">
+                    <img class="img-fluid rounded-4 p-1" src="../assets/images/IBMBoats.jpg" alt="Aerial image of a large catamaran with solar panels">
+                </div>
+                <p>One of the first major autonomous naval voyages was completed by the IBM Mayflower, a fifteen meter long catamaran with an electric engine powered by its large solar panels. On its launch in April 2022, it was intended to follow the route of the epynonymous pilgrim ship from Plymouth to Massachusets, however navigational difficulties saw it reach land in Canada instead. This type of craft shows huge promise, however, as its solar panels allow it to potentially sail for months at a time without needing to dock as often as typical cargo ships today.</p>
+                <div class="d-inline-flex justify-content-center w-100">
+                    <img class="img-fluid rounded-4 p-1" src="../assets/images/ArtemisBoat.jpg" alt="Aimulated picture of a catamaran with multiple sails">
+                </div>
+                <p>
+                    In the more high-performance world, Sailing technology experts Artemis Technologies are planning an ambitious hybrid sail and engine powered catamaran. With a design based on the boats in the elite yachting race, the Americas Cup, this concept catamaran will aim for a constant speed of 30 knots (or 35 miles per hour). The constant speed is mainained by the AI switching from charging a dynamo in higher wind speeds, to using its charge to turn the engine in slower conditions.
+                </p>
+                <div class="d-inline-flex justify-content-center w-100">
+                    <img class="img-fluid rounded-4 p-1" src="../assets/images/DataBoat.avif" alt="Photo of a small catamaran with a wind turbine">
+                </div>
+                <p>
+                    One area where unmanned vehicles have been prevalent for years is in scientific field research: from submarines to data-gathering buoy stations, AI has vastly increased marine scientsts' data collection capabilities. One such example is the C-Enduro: this is a small, unmanned vessel designed to rove around the Celtic sea to monitor wildlife and meteorological conditions. With diesel, wind and solar power, the craft and its deck of cameras, microphones and sensors could remain at sea for up to 3 months at a time.
+                </p>
+            </section>
+        </section>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
