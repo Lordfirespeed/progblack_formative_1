@@ -477,6 +477,10 @@ progress {
   max-width: 50%;
 }
 
+.mw-15 {
+  max-width: 15%;
+}
+
 .content {
   max-width: 55rem;
 }
