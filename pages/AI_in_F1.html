@@ -12,18 +12,20 @@
 
     <body>
         <nav-bar></nav-bar>
-        <div id="main" class="container-fluid d-flex flex-row justify-content-center">
-            <section class="content">
-                <section id="intro">
-                    <img class="img-fluid p-1" src="../assets/images/RBR.jpg" alt="Modern F1 car">
-                    <img class="img-fluid p-1" src="../assets/images/Old-f1.jpg" alt="Old F1 car">
+        <div id="main", class="container-fluid d-flex flex-row justify-content-center">
+            <section>
+                <section id="intro",class="content">
+                    <img class="img-fluid p-1 w-75" src="../assets/images/RBR.jpg" alt="Modern F1 car">
+                    <img class="img-fluid p-1 w-75" src="../assets/images/Old-f1.jpg" alt="Old F1 car">
                     <h1>How does F1 incorporate Computing?</h1>
                     <p>Machine Learning is a field devoted to using data to improve upon a set of tasks. It has had a great impact on F1. F1 cars have an ECU, which is essentially a small but very powerful computer that controls, processes and transmits vast quantities of data from the F1 cars to the teams.
                         The ECU is like a control system for the engine, gearbox, throttle, clutch, etc. It feeds data (telemetry) to the teams.
                         Not only on the track, but ML has helped F1 develop as a sport off the track as well, it uses data gathered from previous races and previous models of F1 cars to help build the fastest and safest car under the regulations.
                     </p>
                 </section>
-                        <section>
+                <section class="d-flex">
+                    <div>
+                        <section class="contatiner-fluid p-0 w-75">
                             <h2>Data Gathering</h2>
                              <p> The entire sport of F1 requires immense amounts of data to function,
                                  whether that be to provide it to the people watching on race day, 
@@ -35,13 +37,13 @@
                                  and also importantly, safer.
                                 </p>
                         </section>
-                        <section>
+                        <section class="container-fluid p-0 w-50">
                             <h3>Data on Race Day</h3> 
                             <p>The teams gather data from the sensors on race day and can then use this 
                                 data as it comes through to make changes to there strategies and amend there cars
                                 In a 2 hour race, about 750 million bits of data is sent to the pit wall. </p>
                         </section>
-                        <section>
+                        <section class="container-fluid p-0 w-50">
                             <h3>Data off the track</h3>
                             <p> When a car is being developed, to get the best working car under the proper regulations,
                                  engineers and designers have to account for a million different possibilities.
@@ -49,8 +51,11 @@
                                  in the older seasons on the conditions of the track, the unpredictability, the weather,
                                  and many other bits and tweaks.</p>
                         </section>
-                <section id="Wind Tunnel">
-                        <section>
+                    </div>
+                </section>
+                <section id="Wind Tunnel" class="d-flex">
+                    <div>
+                        <section class="container-fluid p-0 w-100">
                             <h2>Wind Tunnel and Computational Fluid Dynamics</h2>
                             <p>  Modern F1 cars are required to produce a very high amount of downforce to keep the car 
                                  on the track.
@@ -62,7 +67,7 @@
                                  the Wind Tunnel helps in developing the car to make it suitable for all tracks
                                  and designing the various intricate pieces into the perfect design</p>
                         </section>
-                        <section>
+                        <section class="container-fluid p-0 w-75">
                             <h3>CFD and Wind Tunnel usage by the FIA</h3>
                             <p>F1, like any other sport, requires excitement to maintain engagement, and nothing in car race
                                is more engaging than close battles between two extremely skilled drivers matched up against each
@@ -72,8 +77,8 @@
                                are able to follow each other closer and thus allow more action in a race.
                             </p>
                         </section>
-                        <section>
-                            <h3>CFD for the teams</h3>
+                        <section class="container-fluid p-0 w-75">
+                            <h3>CFD for Team problems</h3>
                             <p>The teams don't necessarily use the wind tunnel like the FIA can. Each team is pitted 
                                 against the other and all of them are trying to create the fastest car possible. So they make use
                                 of the wind tunnel to come up with various models of there design and try to pit them against each other.
@@ -82,10 +87,11 @@
                                 of the car would behave under such conditions. 
                             </p>
                         </section>
+                    </div> 
                 </section>
-                <section>
+                <section class="d-flex">
                     <div>
-                        <section id="Fans">
+                        <section id="Fans" class="container-fluid p-0 w-75">
                             <h2>Fan Engagement</h2>
                             <p>  No Sport in the world can be possible without fans, and therefore, F1 has to make the sport
                                  as user-friendly and engaging to the people as possible.
@@ -96,7 +102,7 @@
                                  like the exact distance between two cars, the time before one can pull off an overtake, etc.
                             </p>
                         </section>
-                        <section>
+                        <section class="container-fluid p-0 w-50">
                             <h3>On-screen engagement</h3>
                             <p>The most basic things present on the screen of an F1 viewer can make the overall
                                 experience of watching a race much better than normal. A normal screen will show the 
@@ -106,7 +112,7 @@
                                 them back to watch the next race.
                             </p>
                         </section>
-                        <section>
+                        <section class="container-fluid p-0 w-50">
                             <h3>More intricate data onboard</h3>
                             <p>The most basic things, however, aren't the only exciting part about a formula 1 weekend.
                                 There is so much potential and data present in the race for fans to see that just the timing
@@ -120,6 +126,6 @@
                 </section>
             </section>
         </div>
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>
