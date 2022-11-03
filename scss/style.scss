@@ -38,7 +38,7 @@ body {
 @for $width from 1 through 19 {
   $width: $width * 5;
   .mw-#{$width} {
-    max-width: $width
+    max-width: $width * 1%
   }
 }
 
