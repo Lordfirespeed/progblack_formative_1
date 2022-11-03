@@ -10,13 +10,79 @@
 </head>
 <body>
     <nav-bar current-active="homepage"></nav-bar>
-    <div id="main-content" class="container-fluid d-flex flex-row justify-content-center">
-        <section id="text-content" class="content">
-            <figure class="figure text-center">
-                <blockquote class="display-1">We Live in a Society</blockquote>
-                <figcaption class="blockquote-footer">Zack Snyder's <i>Joker</i></figcaption>
-            </figure>
-        </section>
+
+    <div id="main-content" class="d-flex flex-column justify-content-evenly">
+        <figure class="figure text-center">
+            <blockquote class="display-1">We Live in a Society</blockquote>
+            <figcaption class="blockquote-footer">Zack Snyder's <i>Joker</i></figcaption>
+        </figure>
+
+        <div class="container" style="max-width: 70rem;">
+            <!--https://getbootstrap.com/docs/5.2/components/carousel/ -->
+            <div id="carouselPages" class="carousel ps-1 pe-1 slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselPages" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <a href="pages/climate_robots.html">
+                            <div class="ratio ratio-16x9">
+                                <img src="assets/images/aerial-forest.webp" style="object-fit: cover" alt="...">
+                            </div>
+                            <div class="carousel-caption bg-opacity-50">
+                                <h1>Fighting Climate Change with Robots</h1>
+                                <p>Joe Clack</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="pages/boat.html">
+                            <div class="ratio ratio-16x9 ">
+                                <!-- Connor Sexton on Unsplash https://unsplash.com/photos/hRemch0ZDwI -->
+                                <img src="assets/images/conor-sexton-hRemch0ZDwI-unsplash.jpg" style="object-fit: cover" alt="...">
+                            </div>
+                            <div class="carousel-caption bg-opacity-50">
+                                <h1>Vessel not Under Command</h1>
+                                <p>Johnny Bannerman</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="pages/AI_in_F1.html">
+                            <div class="ratio ratio-16x9 ">
+                                <img src="assets/images/RBR.jpg" style="object-fit: cover" alt="...">
+                            </div>
+                            <div class="carousel-caption bg-opacity-50">
+                                <h1>Computing in F1</h1>
+                                <p>Antriksh Singh</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="pages/efficiency.html">
+                            <div class="ratio ratio-16x9 ">
+                                <img src="assets/images/network-image.png" style="object-fit: cover" alt="...">
+                            </div>
+                            <div class="carousel-caption bg-opacity-50">
+                                <h1>Efficiency and Pattern Recognition</h1>
+                                <p>Lulu Clayton</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPages" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPages" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
