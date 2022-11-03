@@ -30,7 +30,7 @@ class AuthorDisplay extends HTMLElement {
 
             elements.forEach((element) => {
                 console.log(element)
-                if (element.tagName === "A") {element.href  = String(field_value); return}
+                if (element.tagName === "A") {element.href  = String(field_value); element.removeAttribute("hidden"); return}
                 if (element.tagName === "IMG") {element.setAttribute("src",String(field_value) + ".png"); return}
             })
         }
