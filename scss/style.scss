@@ -35,12 +35,11 @@ body {
   background: $dark;
 }
 
-.mw-50 {
-  max-width: 50%;
-}
-
-.mw-15 {
-  max-width: 15%;
+@for $width from 1 through 19 {
+  $width: $width * 5;
+  .mw-#{$width} {
+    max-width: $width
+  }
 }
 
 .content {
