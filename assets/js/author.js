@@ -18,18 +18,16 @@ class AuthorDisplay extends HTMLElement {
 
     fill_fields(json) {
         for (const [field_name, field_value] of Object.entries(json["fields"])) {
-            let elements = this.querySelectorAll("[field=" + field_name + "]");
+            let elements = this.shadowRoot.querySelectorAll("[field=" + field_name + "]");
 
             elements.forEach((element) => element.innerHTML = String(field_value))
 
         }
 
         for (const [field_name, field_value] of Object.entries(json["links"])) {
-            let elements = this.querySelectorAll("[link_field=" + field_name + "]");
-            console.log(elements)
+            let elements = this.shadowRoot.querySelectorAll("[link_field=" + field_name + "]");
 
             elements.forEach((element) => {
-                console.log(element)
                 if (element.tagName === "A") {element.href  = String(field_value); element.removeAttribute("hidden"); return}
                 if (element.tagName === "IMG") {element.setAttribute("src",String(field_value) + ".png"); return}
             })
@@ -42,6 +40,8 @@ class AuthorDisplay extends HTMLElement {
 
     constructor() {
         super();
+
+        this.attachShadow({mode: "open"})
 
         this.initialise()
 
@@ -57,7 +57,7 @@ class AuthorDisplay extends HTMLElement {
 function define_footer(html) {
     class AuthorFooter extends AuthorDisplay {
         initialise() {
-            this.innerHTML = html
+            this.shadowRoot.innerHTML = html
         }
     }
 
@@ -67,7 +67,7 @@ function define_footer(html) {
 function define_card(html) {
     class AuthorCard extends AuthorDisplay {
         initialise() {
-            this.innerHTML = html
+            this.shadowRoot.innerHTML = html
         }
     }
     customElements.define("author-card", AuthorCard)
