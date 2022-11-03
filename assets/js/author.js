@@ -26,10 +26,8 @@ class AuthorDisplay extends HTMLElement {
 
         for (const [field_name, field_value] of Object.entries(json["links"])) {
             let elements = this.querySelectorAll("[link_field=" + field_name + "]");
-            console.log(elements)
 
             elements.forEach((element) => {
-                console.log(element)
                 if (element.tagName === "A") {element.href  = String(field_value); element.removeAttribute("hidden"); return}
                 if (element.tagName === "IMG") {element.setAttribute("src",String(field_value) + ".png"); return}
             })
