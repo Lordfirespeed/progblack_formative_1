@@ -8,7 +8,7 @@ function define(html) {
     class NavBar extends HTMLElement {
         on_document_loaded() {
             let active_name = this.getAttribute("current-active");
-            let nav_link_element = this.getElementById("navbar-nav-link-" + active_name);
+            let nav_link_element = document.getElementById("navbar-nav-link-" + active_name);
             if (nav_link_element === null) { return }
 
             nav_link_element.classList.add("active");
