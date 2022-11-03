@@ -842,4 +842,9 @@ body {
   text-decoration-color: #ffc107;
 }
 
+.text-bg-primary {
+  background-color: #6f42c1;
+  color: #f8f9fa;
+}
+
 /*# sourceMappingURL=style.css.map */
