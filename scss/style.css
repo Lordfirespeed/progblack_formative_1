@@ -832,12 +832,12 @@ body {
   max-width: 55rem;
 }
 
-.text-bg-primary a {
+a.link-primary-bg {
   color: #dc3545;
   text-decoration-color: #dc3545;
 }
 
-.text-bg-primary a:hover {
+a.link-primary-bg:hover {
   color: #ffc107;
   text-decoration-color: #ffc107;
 }

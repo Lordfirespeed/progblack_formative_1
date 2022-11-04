@@ -46,12 +46,12 @@ body {
   max-width: 55rem;
 }
 
-.text-bg-primary a {
+a.link-primary-bg {
   color: $red;
   text-decoration-color: $red;
 }
 
-.text-bg-primary a:hover {
+a.link-primary-bg:hover {
   color: $yellow;
   text-decoration-color: $yellow;
 }
