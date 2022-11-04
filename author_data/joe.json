@@ -1,0 +1,11 @@
+{
+  "fields": {
+    "name":  "Joe Clack",
+    "studying": "Maths and Computer Science",
+    "blurb": "Joe lives in ."
+  },
+  "links": {
+    "github": "https://github.com/Lordfirespeed",
+    "linkedin": "https://www.linkedin.com/in/joseph-clack-236482113/"
+  }
+}
