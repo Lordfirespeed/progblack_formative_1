@@ -1,6 +1,7 @@
 {
   "fields": {
     "name":  "Lulu Clayton",
+    "pronouns": "she/her",
     "studying": "Computer Science",
     "blurb": "Lulu lives in Cornwall, and has 10 pet tortoises (not amphibian)."
   },
