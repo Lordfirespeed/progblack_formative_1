@@ -1,8 +1,8 @@
 {
     "fields": {
       "name":  "Johnny Bannerman",
-      "studying": "Mathematics and Computer Science",
-      "blurb": "Johnny is a sailing instructor and frequents the lake with Durham Sailing Society. He's recongisable by his purple hair."
+      "studying": "Maths and Computer Science",
+      "blurb": "Johnny is a sailing instructor and frequents the lake with Durham Sailing Society. He's recognisable by his purple hair."
     },
     "links": {
       "github": "https://github.com/busymaestro"
