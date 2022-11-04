@@ -832,14 +832,4 @@ body {
   max-width: 55rem;
 }
 
-a.link-primary-bg {
-  color: #dc3545;
-  text-decoration-color: #dc3545;
-}
-
-a.link-primary-bg:hover {
-  color: #ffc107;
-  text-decoration-color: #ffc107;
-}
-
 /*# sourceMappingURL=style.css.map */
