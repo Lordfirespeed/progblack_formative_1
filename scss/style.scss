@@ -45,3 +45,13 @@ body {
 .content {
   max-width: 55rem;
 }
+
+.text-bg-primary a {
+  color: $red;
+  text-decoration-color: $red;
+}
+
+.text-bg-primary a:hover {
+  color: $yellow;
+  text-decoration-color: $yellow;
+}
